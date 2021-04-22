@@ -1,0 +1,32 @@
+{
+  "name": "fake-api-with-json-server",
+  "version": "1.0.0",
+  "description": "Fake api with JSON Server",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-data": "node generate-data.js",
+    "dev": "nodemon main.js",
+    "start": "npm run generate-data && node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quockhanhtn/fake-api-with-json-server.git"
+  },
+  "keywords": [
+    "json-server"
+  ],
+  "author": "Khanh Lam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/quockhanhtn/fake-api-with-json-server/issues"
+  },
+  "homepage": "https://github.com/quockhanhtn/fake-api-with-json-server#readme",
+  "dependencies": {
+    "json-server": "^0.16.3"
+  },
+  "devDependencies": {
+    "faker": "^5.5.3",
+    "nodemon": "^2.0.7"
+  }
+}

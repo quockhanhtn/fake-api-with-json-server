@@ -1,0 +1,27 @@
+@bareUrl = http://localhost:3000/api
+@resourceName=categories
+
+
+# @name getAll
+GET {{bareUrl}}/{{resourceName}}
+###
+
+# @name addNew
+POST {{bareUrl}}/{{resourceName}}
+Content-Type: application/json; charset=utf-8
+{
+   "name": "New category"
+}
+###
+
+# @name update
+PATCH   {{bareUrl}}/{{resourceName}}/11
+Content-Type: application/json; charset=utf-8
+{
+   "name": "Update new category"
+}
+###
+
+# @name remove
+DELETE {{bareUrl}}/{{resourceName}}/11
+###
