@@ -8,6 +8,7 @@ npm init
 npm i json-server
 npm i --save-dev nodemon
 npm i --save-dev faker
+npm i --save-dev query-string
 ```
 
 ### References: 

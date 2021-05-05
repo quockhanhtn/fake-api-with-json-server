@@ -6,6 +6,10 @@
 GET {{bareUrl}}/{{resourceName}}
 ###
 
+# @name pagination
+GET {{bareUrl}}/{{resourceName}}?_page=2&_limit=3
+###
+
 # @name addNew
 POST {{bareUrl}}/{{resourceName}}
 Content-Type: application/json; charset=utf-8
